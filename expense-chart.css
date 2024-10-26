@@ -1,0 +1,226 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  background-color: transparent;
+  padding: 10px;
+  width: 23rem;
+}
+
+.balance {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.7rem;
+  border-radius: 10px;
+  width: 100%;
+  color: hsl(33, 100%, 98%);
+}
+
+.my-balance > p {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.analytics {
+  background-color: hsl(33, 100%, 98%);
+  padding: 0 10px 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.analytics > h3 {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.barChart {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  height: 10rem;
+  font-size: 0.8rem;
+}
+
+.barChart > div {
+  width: 2rem;
+}
+
+.barChart > div > p {
+  padding-top: 0;
+  margin-top: 1px;
+}
+
+.mon-bar {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 4px;
+  padding-top: 0;
+  animation: barChart 2s 1 ease;
+}
+
+.mon > p {
+  margin-left: 0.15rem;
+}
+
+.tue-bar {
+  background-color: hsl(10, 79%, 65%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.tue > p {
+  margin-left: 0.45rem;
+}
+
+.wed-bar {
+  background-color: hsl(186, 34%, 60%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.wed > p {
+  margin-left: 0.25rem;
+}
+
+.thu-bar {
+  background-color: hsl(10, 79%, 65%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.thu > p {
+  margin-left: 0.35rem;
+}
+
+.fri-bar {
+  background-color: hsl(10, 79%, 65%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.fri > p {
+  margin-left: 0.65rem;
+}
+
+.sat-bar {
+  background-color: hsl(10, 79%, 65%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.sat > p {
+  margin-left: 0.45rem;
+}
+
+.sun-bar {
+  background-color: hsl(10, 79%, 65%);
+  padding-top: 0;
+  border-radius: 4px;
+  animation: barChart 2s 1 ease;
+}
+
+.sun > p {
+  margin-left: 0.4rem;
+}
+
+hr {
+  margin: 0 1.25rem;
+  border-color: hsl(27, 66%, 92%);
+}
+
+.total-calculations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  padding-left: 1rem;
+}
+
+h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  opacity: 0.8;
+}
+
+.total > p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: hsl(25, 47%, 15%);
+}
+
+.fromLastMonth {
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.fromLastMonth > p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fromLastMonth > h6 {
+  margin-top: 0;
+}
+
+.mon-exp,
+.tue-exp,
+.wed-exp,
+.thu-exp,
+.fri-exp,
+.sat-exp,
+.sun-exp {
+  padding: 2.5px 20px;
+  margin-bottom: 0.25rem;
+  transform: translateX(-10%);
+  color: white;
+  display: none;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: hsl(25, 47%, 15%);
+}
+
+.mon-exp p,
+.tue-exp p,
+.wed-exp p,
+.thu-exp p,
+.fri-exp p,
+.sat-exp p,
+.sun-exp p {
+  padding: 5px;
+  margin: 0;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+@keyframes barChart {
+  0% {
+    padding-top: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="expense-chart.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="balance">
+        <div class="my-balance">
+          <h6>My balance</h6>
+          <p>$921.48</p>
+        </div>
+        <img src="./images/logo.svg" alt="logo" />
+      </section>
+      <section class="analytics">
+        <h3>Spending - Last 7 days</h3>
+        <div class="barChart">
+          <div class="mon">
+            <div class="mon-exp">
+              <p>52</p>
+            </div>
+            <div class="mon-bar"></div>
+            <p>mon</p>
+          </div>
+          <div class="tue">
+            <div class="tue-exp">
+              <p></p>
+            </div>
+            <div class="tue-bar"></div>
+            <p>tue</p>
+          </div>
+          <div class="wed">
+            <div class="wed-exp">
+              <p></p>
+            </div>
+            <div class="wed-bar"></div>
+            <p>wed</p>
+          </div>
+          <div class="thu">
+            <div class="thu-exp">
+              <p></p>
+            </div>
+            <div class="thu-bar"></div>
+            <p>thu</p>
+          </div>
+          <div class="fri">
+            <div class="fri-exp">
+              <p></p>
+            </div>
+            <div class="fri-bar"></div>
+            <p>fri</p>
+          </div>
+          <div class="sat">
+            <div class="sat-exp">
+              <p></p>
+            </div>
+            <div class="sat-bar"></div>
+            <p>sat</p>
+          </div>
+          <div class="sun">
+            <div class="sun-exp">
+              <p></p>
+            </div>
+            <div class="sun-bar"></div>
+            <p>sun</p>
+          </div>
+        </div>
+        <hr />
+        <div class="total-calculations">
+          <div class="total">
+            <h6>Total this month</h6>
+            <p>$478.33</p>
+          </div>
+          <div class="fromLastMonth">
+            <p>+2.4%</p>
+            <h6>from last month</h6>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="expense-chart.js"></script>
+  </body>
+</html>
